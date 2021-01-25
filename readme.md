@@ -20,8 +20,14 @@ Run the TypeScript build:
 npm run build
 ```
 
-Deploying to AWS:
+Create the initial AWS Lambda function:
 
 ```
 claudia create --region us-east-1 --api-module dist/index
+```
+
+Deploy a new version of the AWS Lambda function:
+
+```
+claudia update
 ```
