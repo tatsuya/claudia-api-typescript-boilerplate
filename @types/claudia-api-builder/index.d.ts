@@ -1,17 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/ban-types */
 
-declare module 'claudia-api-builder'{
-    class ApiResponse {
-      public constructor(response: any, headers: any, code?: any);
-    }
-    export default class ApiBuilder {
-        public static ApiResponse: typeof ApiResponse;
+declare module 'claudia-api-builder' {
+  class ApiResponse {
+    public constructor(response: any, headers: any, code?: any);
+  }
 
-        get(uri: string, callback: Function): void;
+  export default class ApiBuilder {
+    public static ApiResponse: typeof ApiResponse;
 
-        put(uri: string, callback: Function): void;
+    get(uri: string, callback: Function): void;
 
-        post(uri: string, callback: Function): void;
-    }
+    put(uri: string, callback: Function): void;
+
+    post(uri: string, callback: Function): void;
+  }
 }
